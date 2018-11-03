@@ -9,7 +9,7 @@ var path = require("path");
 // express() calls the express function and gives us an application instance that we save to our app variable
 // on the app object, now we can create routes such as http GET or POST requests
 var app = express();
-var PORT = 3000;
+var PORT = process.env.PORT || 3000;
 
 // =================== Sets up the Express app to handle data parsing ==================== //
 // Middleware functions are functions added to the stack that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. 
